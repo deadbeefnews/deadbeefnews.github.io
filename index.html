@@ -2,22 +2,54 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="profile">
+	{% if site.logourl != "" %}<img src="{{ site.logourl }}" class="profileimage" alt="user">{% endif %}
+	<h4>{{ site.title }}</h4>
+	 <ul>
+    	{% if site.twitter_url %}
+        <li><a href="{{ site.twitter_url }}" class="smallsocialbutton twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        {% endif %}
+        {% if site.facebook_url %}
+        <li><a href="{{ site.facebook_url }}" class="smallsocialbutton facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        {% endif %}
+        {% if site.github_url %}
+        <li><a href="{{ site.github_url }}" class="smallsocialbutton github" target="_blank"><i class="fa fa-github"></i></a></li>
+        {% endif %}
+        {% if site.instagram_url %}
+        <li><a href="{{ site.matt_instagram_url }}" class="smallsocialbutton instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        {% endif %}
+        <li><a href="{{ site.url }}/feed.xml" class="smallsocialbutton rss" target="_blank"><i class="fa fa-rss"></i></a></li>
+    </ul>
+	<p>{{ site.description }}</p>
+	<hr>
 </div>
+
+<section class="posts postindex wrapper">
+
+	{% for post in paginator.posts %}
+		<article class="post {% if post.featured == true %} featured {% endif %}">
+			<header>
+				<div class="feature"><span>Featured</span><i class="fa fa-bookmark fa-lg"></i></div>
+				<h2>
+					{% for category in post.categories %}
+					{{ category }}
+					{% endfor %}
+				</h2>
+				<h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+				<span>
+					Posted on <i class="fa fa-clock-o"></i><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>.
+				</span>
+				<div class="excerpt">
+					{% if post.content contains '<!--more-->' %}
+						{{ post.content | split:'<!--more-->' | first }}
+					{% else %}
+						{{ post.content }}
+					{% endif %}
+				</div>
+			</header>
+		</article>
+	{% endfor %}
+
+	{% include pagination.html %}
+
+</section>
