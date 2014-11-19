@@ -2,7 +2,6 @@
 layout: post
 title:  "Douglas Crockford Admits '!' Operator the Only Good Part of JavaScript"
 date:   2014-11-19 00:16:00
-author: Matt Molnar
 categories: programming
 ---
 San Jose, California. Today at the jQuery developer conference, Douglas Crockford, creator of the critically acclaimed, award winning, multi-platform JSON data format, revealed his even more precise understanding of the JavaScript language.
