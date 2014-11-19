@@ -1,12 +1,100 @@
-# Site settings
-title: DeadBeef News
-email:
-description: > # this means to ignore newlines until "baseurl:"
-  Get rich or die trying.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://deadbeefnews.github.io" # the base hostname & protocol for your site
-twitter_username: deadbeefnews
-github_username:  deadbeefnews
 
-# Build settings
-markdown: kramdown
+
+# Site Settings
+title: 						"DeadBeef News"
+email: 						"info@deadbeef.wtf"
+description: 				"Startups are cool."
+baseurl: 					""
+url: 						"http://deadbeef.wtf"
+logourl: 					"/assets/img/deadbeef.png"
+fa-logo: 					"icon-DeadBeef"
+paginate: 					5
+
+
+# Kevin McAlear Author Settings
+kevin_name: 				"Kevin McAlear"
+kevin_url: 				"http://kevinmcalear.com"
+kevin_bio: 				"I love traveling, technology, wisdom, inventing, ultimate frisbee, leadership, wine, philosophy, humor, culture, differences, relationships, & building systems."
+kevin_email: 				"kevin.mcalear@gmail.com"
+kevin_image: 				"/assets/img/kevin.jpeg"
+
+# Matt Molnar Author Settings
+matt_name:        "Matt Molnar"
+matt_url:         "http://www.io2g.com/"
+matt_bio:         "Programming, tech and other shenanigans."
+matt_email:         "matthew.molnar@gmail.com"
+matt_image:         "/assets/img/matt.jpeg"
+
+# Jordan Justice Author Settings
+jordan_name:        "Jordan Justice"
+jordan_url:         "http://jordanjustice.me"
+jordan_bio:         "Confirmed Episcopalian, wannabe Jewish mystic."
+jordan_email:         "jordan@jordanjustice.me"
+jordan_image:         "/assets/img/jordan.jpeg"
+
+# Site Social Settings
+twitter_url:        "//twitter.com/deadbeefnews"
+facebook_url:         "//facebook.com/deadbeefnews"
+github_url:         "//github.com/deadbeefnews"
+# youtube_url:          "http://youtube.com"
+# dribbble_url:         "http://dribbble.com"
+# googleplus_url:       "http://google.com/plus"
+# instagram_url:        "http://instagram.com"
+# pinterest_url:        "http://pinterest.com"
+# linkedin_url:         "http://linkedin.com"
+
+# Kevin McAlear Social Settings
+kevin_twitter_url: 				"http://twitter.com"
+kevin_facebook_url: 				"http://facebook.com"
+kevin_github_url:  				"http://github.com"
+kevin_youtube_url:  				"http://youtube.com"
+kevin_dribbble_url:  				"http://dribbble.com"
+kevin_googleplus_url: 			"http://google.com/plus"
+kevin_instagram_url:  			"http://instagram.com"
+kevin_pinterest_url:  			"http://pinterest.com"
+kevin_linkedin_url:  				"http://linkedin.com"
+
+# Matt Molnar Social Settings
+matt_twitter_url:        "http://twitter.com"
+# matt_facebook_url:         "http://facebook.com"
+matt_github_url:         "http://github.com"
+# matt_youtube_url:          "http://youtube.com"
+# matt_dribbble_url:         "http://dribbble.com"
+# matt_googleplus_url:       "http://google.com/plus"
+# matt_instagram_url:        "http://instagram.com"
+# matt_pinterest_url:        "http://pinterest.com"
+matt_linkedin_url:         "http://linkedin.com"
+
+# Jordan Justice Social Settings
+jordan_twitter_url:        "http://twitter.com"
+jordan_facebook_url:         "http://facebook.com"
+jordan_github_url:         "http://github.com"
+jordan_youtube_url:          "http://youtube.com"
+jordan_dribbble_url:         "http://dribbble.com"
+jordan_googleplus_url:       "http://google.com/plus"
+jordan_instagram_url:        "http://instagram.com"
+jordan_pinterest_url:        "http://pinterest.com"
+jordan_linkedin_url:         "http://linkedin.com"
+
+
+# Theme Settings
+theme_disqus_shortname: 	"deadbeefnews"
+theme_google_comments: 		false
+theme_analytics_id: 		"UA-56890908-1"
+theme_analytics_domain: 	"deadbeef.wtf"
+theme_reading_time: 		true
+theme_autoload_comments: 	false
+theme_always_show_nav: 		false
+
+
+# SASS Settings
+# DO NOT MODIFY
+sass:
+ sass_dir: "assets/css/"
+ style: :compressed
+
+
+# Build Settings
+markdown: 					kramdown
+permalink: 					pretty
+
