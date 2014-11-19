@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic,700italic);
 
-$heading: PT Sans Narrow', sans-serif;
-$summary: PT Sans', sans-serif;
+$heading: 'PT Sans Narrow', sans-serif;
+$summary: 'PT Sans', sans-serif;
 $body: 'PT Serif', serif;
 
 
@@ -82,7 +82,7 @@ p {
  */
 .wrapper {
     margin: 0 auto;
-    width: 40rem;
+    width: 30rem;
     max-width: 94%;
     @extend %clearfix;
 }
@@ -111,6 +111,43 @@ a.site-title {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.site-nav {
+    text-align: center;
+    margin-bottom: 2em;
+    a.page-link {
+        font-family: $summary;
+        color: darkred;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0 .5em;
+        border-left: 1px solid darkred;
+        border-right: 1px solid darkred;
+        &:first-child, &:last-child {
+            border: none;
+        }
+    }
+}
+
+
+.post-header {
+    text-align: center;
+    .post-title {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+    hr {
+        border: none;
+        height: 2px;
+        width: 150px;
+        margin: 1em auto;
+        background: #222222;
+    }
+}
+
+article.post-content {
+    text-align: justify;
 }
 
 footer {
