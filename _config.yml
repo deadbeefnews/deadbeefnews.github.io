@@ -10,3 +10,18 @@ github_username:  deadbeefnews
 
 # Build settings
 markdown: kramdown
+
+# Prose.io settings
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://deadbeef.wtf'
+  media: 'images'
+  ignore:
+    - index.html
+    - about.md
+    - submit.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
