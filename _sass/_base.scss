@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic,700italic);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
 $heading: 'PT Sans Narrow', sans-serif;
 $summary: 'PT Sans', sans-serif;
@@ -23,7 +24,7 @@ dl, dd, ol, ul, figure {
  */
 body {
     background: #fdfdfd;
-    font-family: $body;
+    font-family: $summary;
     font-size: 18px;
     color: #111111;
     line-height: 1.5em;
@@ -82,9 +83,10 @@ p {
  */
 .wrapper {
     margin: 0 auto;
-    width: 30rem;
+    width: 40rem;
     max-width: 94%;
     @extend %clearfix;
+    position: relative;
 }
 
 
@@ -131,9 +133,9 @@ a.site-title {
 }
 
 
-.post-header {
+.post-header, .page-header {
     text-align: center;
-    .post-title {
+    .post-title, .page-title {
         font-size: 1.5em;
         line-height: 1em;
     }
@@ -146,12 +148,88 @@ a.site-title {
     }
 }
 
-article.post-content {
+.page-header {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+article.post-content, article.page-content {
+    font-family: $body;
     text-align: justify;
 }
 
 footer {
-    border-top: 1px solid #111111;
+    background: darken(#fdfdfd, 5%);
+    border-top: 4px solid darken(#fdfdfd, 10%);
     margin-top: 2rem;
-    padding-top: 1rem;
+    padding: 2rem 0 4rem 0;
+    .site-info {
+        display: inline-block;
+    }
+    ul.social-media-list {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    list-style: none;
+        li {
+            display: inline-block;
+            a {
+                font-size: 3rem;
+                color: lighten(#222222, 50%);
+            }
+        }
+    }
+    hr {
+        border: none;
+        height: 1px;
+        width: 100%;
+        background: lighten(#222222, 50%);
+        margin-top: 2rem;
+    }
+    p.copyright {
+        font-size: .75rem;
+        text-align: center;
+        color: lighten(#222222, 50%);
+    }
 }
+
+.page-heading {
+    font-size: 1rem;
+    margin-bottom: .25rem;
+}
+
+.post-list {
+    list-style: none;
+    li {
+        padding: 1rem;
+        border-top: 1px solid lighten(#222222, 50%);
+        &:last-child {
+            border-bottom: 1px solid lighten(#222222, 50%);
+        }
+    }
+    h2 a {
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: #222222;
+        &:visited {
+            color: lighten(#222222, 50%);
+        }
+    }
+    .post-meta {
+        font-family: $heading;
+        font-size: .75em;
+        color: lighten(#222222, 50%);
+    }
+}
+
+.rss-subscribe {
+    margin-top: .5rem;
+    a {
+        color: lighten(#222222, 50%);
+        text-decoration: none;
+    }
+    i {
+        color: orange;
+    }
+}
+

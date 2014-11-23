@@ -2,6 +2,8 @@
 layout: post
 title:  "Douglas Crockford Admits '!' Operator the Only Good Part of JavaScript"
 date:   2014-11-19 00:16:00
+author: mattcodez
+author-link:
 categories: programming
 ---
 ![Douglas Crockford](/images/crockford-medium.jpg)

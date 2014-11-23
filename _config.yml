@@ -2,9 +2,9 @@
 title: DeadBeef News
 email:
 description: > # this means to ignore newlines until "baseurl:"
-  Get rich or die trying.
+  Real, 100% honest news, 0% of the time.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://deadbeefnews.github.io" # the base hostname & protocol for your site
+url: "http://deadbeef.wtf" # the base hostname & protocol for your site
 twitter_username: deadbeefnews
 github_username:  deadbeefnews
 
