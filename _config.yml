@@ -32,6 +32,7 @@ prose:
     	- name: "date"
     		field:
     			element: "text"
+    			value: ""
     	- name: "author"
     		field:
     			element: "text"
