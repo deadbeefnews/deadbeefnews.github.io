@@ -25,3 +25,16 @@ prose:
     - /_includes
   metadata:
     _posts:
+    	- name: "layout"
+    		field:
+      		element: "hidden"
+      		value: "post"
+    	- name: "date"
+    		field:
+    			element: "text"
+    	- name: "author"
+    		field:
+    			element: "text"
+    			value: "You!"
+
+
