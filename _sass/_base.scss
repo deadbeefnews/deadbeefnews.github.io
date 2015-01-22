@@ -108,6 +108,7 @@ a.site-title {
     margin: 2rem 0;
     font-family: $heading;
     font-size: 3em;
+    line-height: 1em;
     font-weight: 700;
     color: #111111;
     text-align: center;
@@ -123,7 +124,7 @@ a.site-title {
         color: darkred;
         text-transform: uppercase;
         text-decoration: none;
-        padding: 0 .5em;
+        padding: 0 .3em;
         border-left: 1px solid darkred;
         border-right: 1px solid darkred;
         &:first-child, &:last-child {
@@ -155,7 +156,6 @@ a.site-title {
 
 article.post-content, article.page-content {
     font-family: $body;
-    text-align: justify;
 }
 
 footer {
