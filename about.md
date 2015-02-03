@@ -4,6 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa modi ullam neque sed iste dolore debitis eum vitae! Debitis similique ad rem dicta ipsum fugit mollitia voluptas deleniti nostrum.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos perferendis sint, repudiandae harum corporis consequatur et error culpa a quidem repellat aspernatur commodi sunt eius itaque quisquam. Dicta, debitis, sunt.
+Here at DeadBeef, we're all about tech, programming and start-ups. Sharing the secret details that no one wants you to know. Have some killer news you want to share? Click the 'Submit an Article' link above to get started.
